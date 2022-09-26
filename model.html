@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="https://aframe.io/releases/1.0.4/aframe.min.js"> </script>
+        </head>
+        <body>
+            <a-scene>
+                <a-assests>
+                    <!-- downloading assets --> 
+                    <a-assest-item id="bench" src="./bench/scene.gltf"></a-assest-item>
+                    <a-assest-item id="child" src="./child/scene.gltf"></a-assest-item>
+                    <a-assest-item id="road" src="./road/scene.gltf"></a-assest-item>
+                    <a-assest-item id="hedge" src="./hedge/scene.gltf"></a-assest-item>
+                    <a-assest-item id="lamp" src="./lamp/scene.gltf"></a-assest-item>
+                </a-assests>
+
+                <a-sky color="#63e5ff"></a-sky>
+
+                <a-entity scale="0.008 0.008 0.008" gltf-model="#bench" position="4.4 -0.9 4" shadow="cast:true"></a-entity>
+                <a-entity scale="0.1 0.1 0.1" gltf-model="#road" position="2 -1 2" shadow="cast:true" rotation="0 90 0"></a-entity>
+                <a-entity scale="0.04 0.01 0.03" gltf-model="#hedge" position="-1 -0.8 4" shadow="cast:true"></a-entity>
+                <a-entity scale="0.009 0.009 0.009" gltf-model="#lamp" position="8 -1.8 5" shadow="cast:true"></a-entity>
+                <a-entity scale="1.2 1.2 1.2" gltf-model="#child" position="3 -1 2" shadow="cast:true" rotation="0 180 0"></a-entity>
+            </a-scene>
+        </body>
+    </html>
